@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Ahmed</title>
+    <style>
+        .about-photo{
+            overflow:hidden;
+        }
+        .about-photo img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+            border-radius:inherit;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Ahmed <span>Zero</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">about</a>
+                <a href="#product">product</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">about</a>
+                <a href="#shop">shop</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <div class="hero-tag" data-aos="fade-up" data-aos-duration="1000">
+                    <span data-en="Available for freelance work" data-ar="متاح للعمل الحر">Available for freelance work</span>
+                </div>
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Hey I'm <span>AhmedSameh</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600" data-en="I build fast, responsive, and user-friendly websites — from the first line of code to the final pixel. Always learning, always shipping." data-ar="بابني مواقع سريعة وسهلة الاستخدام ومتجاوبة، من أول سطر كود لحد آخر تفصيلة في التصميم. دايمًا بتعلم ودايمًا بنشر شغل جديد.">
+                    I build fast, responsive, and user-friendly websites — from the first line of code to the final pixel. Always learning, always shipping.
+                </p>
+                <div class="btn-row" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
+                    <a href="#product" class="hero-btn hero-btn-primary" data-en="View Projects" data-ar="شوف مشاريعي">View Projects</a>
+                    <button class="hero-btn hero-btn-ghost">Download CV</button>
+                </div>
+                <div class="social-links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
+                    <a href="mailto:ahmedsameh88k@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/zerosameh" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@zero31492" target="_blank" rel="noopener" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/0201113141064" target="_blank" rel="noopener" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="zero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+   <section id="about">
+  <div class="section-inner">
+    <div class="about-wrap">
+      <div class="about-photo" id="aboutPhoto">
+        <img src="zero.png" alt="Ahmed Sameh">
+      </div>
+      <div>
+        <div class="eyebrow mono" data-en="// who i am" data-ar="// عني">// who i am</div>
+        <h2 class="section-title" data-en="About Me" data-ar="نبذة عني">About Me</h2>
+        <p style="color:var(--text-dim); margin-bottom:14px;" data-en="Hey, I'm Ahmed — a developer who genuinely enjoys solving hard problems with clean, maintainable code. I spend a lot of my free time contributing to open-source projects and writing about what I learn along the way." data-ar="أنا أحمد، مطوّر بحب أحل المشاكل الصعبة بكود نضيف وسهل الصيانة. بقضي جزء كبير من وقتي في المساهمة بمشاريع مفتوحة المصدر والكتابة عن اللي بتعلمه.">
+          Hey, I'm Ahmed — a developer who genuinely enjoys solving hard problems with clean, maintainable code. I spend a lot of my free time contributing to open-source projects and writing about what I learn along the way.
+        </p>
+        <p style="color:var(--text-dim);" data-en="I believe good software is mostly about clarity — clear thinking shows up as clear code. Outside of programming, I'm into system design, chess, and terrible puns." data-ar="بأمن إن البرمجة الكويسة أساسها الوضوح، التفكير الواضح بيظهر في شكل كود واضح. بره البرمجة بحب تصميم الأنظمة والشطرنج.">
+          I believe good software is mostly about clarity — clear thinking shows up as clear code. Outside of programming, I'm into system design, chess, and terrible puns.
+        </p>
+        <div class="about-stats">
+          <div>
+            <div class="stat-num">20+</div>
+            <div class="stat-label" data-en="Repositories" data-ar="مستودعات">Repositories</div>
+          </div>
+          <div>
+            <div class="stat-num">3+</div>
+            <div class="stat-label" data-en="Years Experience" data-ar="سنين خبرة">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-num">4</div>
+            <div class="stat-label" data-en="Projects Shipped" data-ar="مشاريع منجزة">Projects Shipped</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product">
+    <div class="shop-box">
+        <div class="eyebrow mono" data-aos="fade-up" data-en="// what i've built" data-ar="// اللي بنيته">// اللي بنيته</div>
+        <h2 class="shop-title" data-aos="fade-up" data-en="My Products" data-ar="مشاريعي">My products</h2>
+        <div class="shop-underline" data-aos="fade-up" data-aos-delay="100"></div>
+        <div class="shop-container">
+            <div class="product" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <div class="product-img">
+                    <img src="Screenshot 2026-08-27 214627.png" alt="Jupa Academy boxing website">
+                </div>
+                <div class="product-body">
+                    <h3 data-en="Project One" data-ar="المشروع الاول">المشروع الاول</h3>
+                    <p data-en="Boxing and kickboxing academy website for Captain Jupa." data-ar="موقع كابتن جوبا للبوكسنج وي الكيك بوكسنج">موقع كابتن جوبا للبوكسنج وي الكيك بوكسنج</p>
+                    <a href="https://jupaacademy.com/" target="_blank" rel="noopener" class="btn-project">
+                        <span data-en="View Details" data-ar="شوف التفاصيل">شوف التفاصيل</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <div class="product-img">
+                    <img src="Screenshot 2026-08-27 220018.png" alt="Wedding and birthday invitation website">
+                </div>
+                <div class="product-body">
+                    <h3 data-en="Project Two" data-ar="المشروع الثاني">المشروع الثاني</h3>
+                    <p data-en="Invitation website for weddings and birthday celebrations." data-ar="موقع دعوه افراح واعياد الميلاد">موقع دعوه افراح واعياد الميلاد</p>
+                    <a href="https://wedding-yousef-samah.github.io/zero./" target="_blank" rel="noopener" class="btn-project">
+                        <span data-en="View Details" data-ar="شوف التفاصيل">شوف التفاصيل</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                <div class="product-img no-img">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="product-body">
+                    <h3 data-en="Project Three" data-ar="المشروع الثالث">المشروع الثالث</h3>
+                    <p data-en="Coming soon." data-ar="قريبًا">قريبًا</p>
+                    <a href="" target="_blank" rel="noopener" class="btn-project">
+                        <span data-en="View Details" data-ar="شوف التفاصيل">شوف التفاصيل</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+   <section id="services">
+    <div class="services-box fade-in-section">  
+        
+        <h2 class="services-title" data-aos="fade-up">My Services</h2>
+        <div class="services-underline" data-aos="fade-up" data-aos-delay="100"></div>
+        <div class="services-container">
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I build responsive and interactive websites using modern web technologies, ensuring optimal performance and user experience.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>I create visually appealing and user-friendly interfaces, focusing on enhancing the overall user experience and engagement.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <i class="fa-solid fa-mobile-alt"></i>
+                <h3>Mobile Optimization</h3>
+                <p>I ensure that websites are fully optimized for mobile devices, providing seamless navigation and performance across all screen sizes.</p>
+            </div>
+        </div>
+        </section>
+
+<section id="contact">
+    <div class="section-inner">
+        <div class="eyebrow mono" data-aos="fade-up" data-en="// let's talk" data-ar="// لنتحدث">// let's talk</div>
+        <h2 class="section-title" data-aos="fade-up" data-en="Contact Me" data-ar="تواصل معايا">Contact Me</h2>
+        <p class="section-sub" data-aos="fade-up" data-en="Got a project in mind? Send me a message and I'll get back to you soon." data-ar="عندك مشروع في بالك؟ ابعتلي رسالة وهرد عليك قريب.">Got a project in mind? Send me a message and I'll get back to you soon.</p>
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="100" action="">
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <textarea rows="6" placeholder="Message" required></textarea>
+            <button type="submit" class="btn-project">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer id="footer-zero">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Ahmed<span class="accent-dot">.</span></span>
+      <span class="mono footer-copy">© 2026 Ahmed Sameh.<span data-en=" All Rights Reserved." data-ar=" جميع الحقوق محفوظة."> All Rights Reserved.</span></span>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:ahmedsameh88k@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="#home"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+
+      const aboutPhoto = document.getElementById('aboutPhoto');
+      if (aboutPhoto) {
+        aboutPhoto.addEventListener('click', () => {
+          aboutPhoto.classList.toggle('is-lifted');
+        });
+      }
+    </script>
+    
+</body>
+</html>
