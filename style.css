@@ -15,7 +15,7 @@ img{
     --bg-elev-2:#161b24;
     --border:#232a35;
     --text:#e7ecf3;
-    --text-dim:#8b96a5;
+    --text-dim:#9dc002f3;
     --accent:#7ee787;
     --accent-dim:#4f9e5c;
     --accent-2:#a78bfa;
@@ -593,7 +593,23 @@ html[dir="rtl"] .product-body h3{font-family:var(--arabic);}
      color:var(--text-dim);}
 
   .about-wrap h2{
-    color:red }
+    color:#a5f3fc;
+    text-shadow: 0 2px 24px rgba(103,232,249,.5), 0 1px 4px rgba(0,0,0,.6);
+  }
+  #about .eyebrow{
+    color:#67e8f9;
+  }
+  #about .about-wrap p{
+    color:#cffafe;
+    text-shadow: 0 1px 10px rgba(8,6,18,.6);
+  }
+  #about .stat-num{
+    color:#67e8f9;
+    text-shadow: 0 1px 12px rgba(103,232,249,.4);
+  }
+  #about .stat-label{
+    color:#a5f3fc;
+  }
 
 footer{
     border-top: 1px solid var(--border);
@@ -790,4 +806,30 @@ footer{
 @keyframes titleRise{
     from{ opacity:0; transform:translateY(14px); }
     to{ opacity:1; transform:translateY(0); }
+}
+#about{
+    overflow: hidden;
+}
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#about .about-wrap{
+    position: relative;
+    z-index: 2;
 }
